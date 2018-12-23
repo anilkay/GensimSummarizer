@@ -1,0 +1,13 @@
+{
+  "name": "Summarizer  app",
+  "description": "Summari app for everything.",
+  "image": "heroku/python",
+  "keywords": ["python", "flask" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "The secret key for the Django application.",
+      "generator": "secret"
+    }
+  }
+  
+}
