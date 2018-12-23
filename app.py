@@ -4,7 +4,7 @@ from flask import request
 app = Flask(__name__)
 @app.route('/')
 def hello_world():
-    return render_template('index.html',baslik='Özet mevzusu',content="Ersan ilyasova çok ilginç bir oyuncudur.")
+    return "HELLO WORLD"
     #Template rendering işlemini de gerçekleştiriyoruz kolaylıkla
 @app.route("/summarize",methods=["GET","POST"])
 def summarize():
