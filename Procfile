@@ -1,1 +1,1 @@
-web: gunicorn app.py
+web: flast run --port PORT
