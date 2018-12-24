@@ -1,5 +1,7 @@
 from flask import Flask
 from flask import render_template
+from flask_cors import CORS, cross_origin
+
 from flask import request
 app = Flask(__name__)
 @app.route('/')
@@ -7,6 +9,7 @@ def hello_world():
     return "HELLO WORLD"
     #Template rendering işlemini de gerçekleştiriyoruz kolaylıkla
 @app.route("/summarize",methods=["GET","POST"])
+@cross_origin()
 def summarize():
     from gensim.summarization import summarize
     form=request.form
