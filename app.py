@@ -10,7 +10,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 def hello_world():
     return "HELLO WORLD"
     #Template rendering işlemini de gerçekleştiriyoruz kolaylıkla
-@app.route("/summarize",methods=["GET","POST"])
+@app.route("/summarize",methods=["POST"])
 @cross_origin()
 def summarize():
     from gensim.summarization import summarize
